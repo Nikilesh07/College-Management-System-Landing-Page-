@@ -1,0 +1,2592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Justice Law College</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+    .floating-icons span{
+position:absolute;
+font-size:40px;
+opacity:.15;
+animation:float 8s infinite;
+}
+
+.floating-icons span:nth-child(1){
+top:15%;
+left:10%;
+}
+
+.floating-icons span:nth-child(2){
+top:30%;
+right:15%;
+}
+
+.floating-icons span:nth-child(3){
+bottom:25%;
+left:15%;
+}
+
+.floating-icons span:nth-child(4){
+bottom:15%;
+right:20%;
+}
+
+.floating-icons span:nth-child(5){
+top:50%;
+left:50%;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-25px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+.reveal{
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+:root{
+    --primary:#8B0000;
+    --secondary:#FFD700;
+    --dark:#111;
+    --light:#fff;
+    --gray:#f4f4f4;
+}
+
+body{
+    background:#fff;
+    color:#222;
+    overflow-x:hidden;
+}
+
+section{
+    padding:80px 8%;
+}
+
+h1,h2,h3,h4{
+    margin-bottom:15px;
+}
+
+p{
+    line-height:1.8;
+}
+
+.container{
+    width:100%;
+    max-width:1300px;
+    margin:auto;
+}
+
+/* ===== PROFESSIONAL NAVBAR ===== */
+html{
+
+scroll-behavior:smooth;
+
+scroll-padding-top:80px;
+
+}
+header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:70px;
+
+background:#071A52;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:0 45px;
+
+z-index:9999;
+
+box-sizing:border-box;
+
+box-shadow:0 4px 15px rgba(0,0,0,.25);
+
+}
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+color:#FFD700;
+
+font-size:24px;
+
+font-weight:bold;
+
+white-space:nowrap;
+
+}
+
+.logo span{
+
+font-size:11px;
+
+color:white;
+
+}
+
+.nav-links{
+
+display:flex;
+
+align-items:center;
+
+gap:35px;
+
+}
+
+.nav-links a{
+
+color:white;
+
+text-decoration:none;
+
+font-size:16px;
+
+font-weight:600;
+
+transition:.3s;
+
+padding:8px 0;
+
+}
+
+.nav-links a:hover{
+
+color:#FFD700;
+
+}
+
+.nav-links a.active{
+
+color:#FFD700;
+
+}
+/* =========================
+   HERO SECTION
+========================= */
+.particles span{
+
+position:absolute;
+
+width:8px;
+
+height:8px;
+
+background:gold;
+
+border-radius:50%;
+
+opacity:.4;
+
+animation:particles 12s linear infinite;
+
+}
+
+@keyframes particles{
+
+0%{
+
+transform:
+translateY(100px);
+
+opacity:0;
+
+}
+
+50%{
+
+opacity:.7;
+
+}
+
+100%{
+
+transform:
+translateY(-700px);
+
+opacity:0;
+
+}
+
+}
+.hero{
+    padding-top:80px;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:linear-gradient(
+rgba(0, 0, 0, 0.75),
+rgba(254, 254, 254, 0.683)
+),
+url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80");
+}
+
+.hero-content{
+    max-width:900px;
+}
+.hero-content{
+animation:heroFade 1.5s ease;
+}
+
+@keyframes heroFade{
+
+from{
+opacity:0;
+transform:translateY(60px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+.hero h1{
+
+font-size:65px;
+
+font-weight:800;
+
+color:#FFD700;
+
+text-shadow:
+0 0 10px rgba(255,215,0,.5),
+0 0 20px rgba(255,215,0,.3);
+
+animation:pulseGlow 3s infinite;
+
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.hero small{
+    display:block;
+    margin-bottom:20px;
+    font-size:18px;
+    letter-spacing:2px;
+}
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.btn{
+    padding:14px 30px;
+    border:none;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.btn-primary{
+    background:var(--secondary);
+    color:#111;
+}
+
+.btn-primary:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 20px rgba(255,215,0,.3);
+}
+
+.btn-outline{
+    border:2px solid white;
+    color:white;
+}
+
+.btn-outline:hover{
+    background:white;
+    color:#111;
+}
+.feature-strip{
+
+background:#8B0000;
+
+color:white;
+
+display:flex;
+
+justify-content:space-around;
+
+padding:20px;
+
+flex-wrap:wrap;
+
+font-weight:600;
+
+}
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:40px;
+    color:var(--primary);
+}
+
+.section-title p{
+    max-width:700px;
+    margin:auto;
+    color:#666;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about{
+    background:var(--gray);
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+.premium-banner{
+
+height:430px;
+
+border-radius:25px;
+
+overflow:hidden;
+
+display:flex;
+
+background:linear-gradient(
+135deg,
+#071A52,
+#0F3460,
+#1B262C
+);
+
+border:4px solid gold;
+
+box-shadow:
+
+0 0 20px rgba(255,215,0,.4),
+
+0 15px 35px rgba(0,0,0,.3);
+
+}
+
+
+.left-side{
+
+width:60%;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+color:white;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+
+
+.badge{
+
+width:90px;
+
+height:90px;
+
+border-radius:50%;
+
+background:gold;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:45px;
+
+color:black;
+
+margin-bottom:20px;
+
+animation:rotateBadge 10s linear infinite;
+
+}
+
+
+
+.left-side h1{
+
+font-size:48px;
+
+line-height:55px;
+
+color:gold;
+
+}
+
+
+
+.left-side p{
+
+margin-top:15px;
+
+font-size:18px;
+
+}
+
+
+
+.left-side h3{
+
+margin-top:20px;
+
+font-size:22px;
+
+}
+
+
+
+.tagline{
+
+margin-top:25px;
+
+padding:12px 25px;
+
+background:gold;
+
+color:black;
+
+font-weight:bold;
+
+border-radius:30px;
+
+}
+
+
+
+.right-side{
+
+width:40%;
+
+position:relative;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+
+
+.building{
+
+font-size:140px;
+
+animation:floatBuilding 3s infinite;
+
+}
+
+
+
+.book{
+
+position:absolute;
+
+top:60px;
+
+left:40px;
+
+font-size:60px;
+
+animation:floatBook 4s infinite;
+
+}
+
+
+
+.gavel{
+
+position:absolute;
+
+bottom:50px;
+
+right:40px;
+
+font-size:70px;
+
+animation:floatGavel 5s infinite;
+
+}
+
+
+
+@keyframes rotateBadge{
+
+from{
+
+transform:rotate(0deg);
+
+}
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+
+
+@keyframes floatBuilding{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+@keyframes floatBook{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+@keyframes floatGavel{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+.about-content h3{
+    color:var(--primary);
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.about-content p{
+    margin-bottom:15px;
+    color:#444;
+}
+
+.about-highlights{
+    margin-top:25px;
+}
+
+.about-highlights li{
+    list-style:none;
+    margin-bottom:12px;
+    font-weight:500;
+}
+
+/* =========================
+   STATS SECTION
+========================= */
+
+.stats{
+    background:#111;
+    color:white;
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.stat-card{
+
+background:#ffffff;
+
+color:#071A52;
+
+height:220px;
+
+border-radius:18px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+transition:.4s;
+
+}
+
+.stat-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.stat-card h2{
+
+font-size:42px;
+
+color:#B8860B;
+
+margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+font-size:18px;
+
+font-weight:600;
+
+color:#333;
+
+}
+
+.stat-card:hover{
+    transform:translateY(-8px);
+    background:var(--primary);
+}
+
+.stat-number{
+    font-size:45px;
+    font-weight:800;
+    color:var(--secondary);
+}
+
+.stat-title{
+    margin-top:10px;
+    font-size:17px;
+}
+
+/* =========================
+   COURSES SECTION
+========================= */
+
+.filter-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:40px;
+}
+
+.filter-btn{
+    border:none;
+    padding:12px 24px;
+    border-radius:30px;
+    background:#ddd;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+.filter-btn.active,
+.filter-btn:hover{
+    background:var(--primary);
+    color:white;
+}
+
+.course-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.course-card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.course-card:hover{
+transform:
+translateY(-15px)
+rotate(1deg);
+}
+
+.course-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.course-content{
+    padding:20px;
+}
+
+.course-content h3{
+    color:var(--primary);
+}
+
+.course-content span{
+    display:inline-block;
+    margin-top:10px;
+    background:var(--secondary);
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.hide{
+    display:none;
+}
+
+/* =========================
+   ADMISSIONS SECTION
+========================= */
+
+.admissions{
+    background:var(--gray);
+}
+
+.table-wrapper{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+th,td{
+    padding:16px;
+    text-align:left;
+}
+
+th{
+    background:var(--primary);
+    color:white;
+    cursor:pointer;
+}
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+tr:hover{
+    background:#ffeaa7;
+}
+
+.apply-btn{
+    margin-top:25px;
+    display:inline-block;
+}
+
+/* =========================
+   APPLICATION MODAL
+========================= */
+
+.modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.7);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:10000;
+}
+
+.modal-content{
+    background:white;
+    width:90%;
+    max-width:550px;
+    padding:30px;
+    border-radius:18px;
+    position:relative;
+}
+
+.close-modal{
+    position:absolute;
+    top:10px;
+    right:15px;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* =========================
+   FACILITIES SECTION
+========================= */
+
+.facilities-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+.hero-content{
+animation:heroFade 1.5s ease;
+}
+
+@keyframes heroFade{
+
+from{
+opacity:0;
+transform:translateY(60px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+.facility-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.facility-card:hover{
+    transform:translateY(-10px) scale(1.03);
+    background:var(--primary);
+    color:white;
+}
+
+.facility-icon{
+    font-size:50px;
+    margin-bottom:15px;
+}
+/* =========================
+   GALLERY SECTION
+========================= */
+
+.gallery{
+    background:var(--gray);
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.04);
+}
+
+/* =========================
+   LIGHTBOX
+========================= */
+
+.lightbox{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.9);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:12000;
+}
+
+.lightbox img{
+    max-width:90%;
+    max-height:85vh;
+    border-radius:10px;
+}
+
+.lightbox.active{
+    display:flex;
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.contact-info{
+    padding:20px;
+}
+
+.contact-info h3{
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+.contact-item{
+    margin-bottom:18px;
+}
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+}
+
+.contact-form textarea{
+    resize:none;
+    height:140px;
+}
+
+.map-box{
+    width:100%;
+    height:300px;
+    border-radius:15px;
+    overflow:hidden;
+    margin-top:20px;
+}
+
+.error{
+    color:red;
+    font-size:14px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+footer span{
+    color:var(--secondary);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+.slider{
+position:relative;
+height:500px;
+overflow:hidden;
+border-radius:20px;
+}
+
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+opacity:0;
+transition:1s;
+}
+
+.slide.active{
+opacity:1;
+}
+
+@media(max-width:992px){
+
+.stats-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.course-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.facilities-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.about-grid,
+.contact-grid{
+    grid-template-columns:1fr;
+}
+
+.hero h1{
+    font-size:50px;
+}
+}
+@keyframes pulseGlow{
+
+0%{
+text-shadow:
+0 0 10px gold;
+}
+
+50%{
+text-shadow:
+0 0 25px gold;
+}
+
+100%{
+text-shadow:
+0 0 10px gold;
+}
+
+}
+@media(max-width:768px).premium-banner{
+
+flex-direction:column;
+
+height:auto;
+
+padding:30px;
+
+}
+
+
+.left-side,
+.right-side{
+
+width:100%;
+
+}
+
+
+.left-side h1{
+
+font-size:35px;
+
+}
+
+
+.building{
+
+font-size:100px;
+
+}{
+
+.menu-btn{
+    display:block;
+}
+
+.nav-links{
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#111;
+    flex-direction:column;
+    text-align:center;
+    padding:20px 0;
+    display:none;
+}
+
+.nav-links.active{
+    display:flex;
+}
+
+.course-grid,
+.facilities-grid,
+.gallery-grid,
+.stats-grid{
+    grid-template-columns:1fr;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:16px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ======================
+     NAVBAR
+====================== -->
+
+<header>
+
+<div class="logo">
+
+⚖ Justice Law College
+
+</div>
+
+<nav class="nav-links">
+
+<a href="#home">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#courses">Courses</a>
+
+<a href="#facilities">Facilities</a>
+
+<a href="#admissions">Admissions</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+<!-- ======================
+     HERO SECTION
+====================== -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+<div class="floating-icons">
+
+<span>⚖️</span>
+<span>📚</span>
+<span>🏛️</span>
+<span>⚖️</span>
+<span>📜</span>
+
+</div>
+<small>ESTABLISHED • 1985</small>
+
+<h1>
+Justice Law College
+</h1>
+
+<p>
+Shaping Future Advocates, Judges, Legal Scholars and
+Policy Leaders through Excellence in Legal Education,
+Ethics, Research and Advocacy.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#admissions"
+class="btn btn-primary">
+Apply Now
+</a>
+
+<a href="#courses"
+class="btn btn-outline">
+Explore Courses
+</a>
+<div class="particles">
+
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+</div>
+
+</div>
+
+</section>
+<section class="feature-strip">
+
+<div>⚖️ Moot Court Training</div>
+
+<div>📚 Digital Library</div>
+
+<div>🏛️ Legal Research Centre</div>
+
+<div>🎓 Placement Assistance</div>
+
+</section>
+<!-- ======================
+     ABOUT SECTION
+====================== -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+<div class="section-title">
+<h2>About Our Institution</h2>
+
+<p>
+One of India's premier law institutions dedicated
+to academic excellence, courtroom training,
+constitutional studies and legal innovation.
+</p>
+</div>
+
+<div class="about-grid">
+<div class="about-image">
+
+<div class="premium-banner">
+
+<div class="left-side">
+
+<div class="badge">
+
+⚖
+
+</div>
+
+<h1>
+
+JUSTICE
+
+<br>
+
+LAW COLLEGE
+
+</h1>
+
+<p>
+
+ESTD • 1985
+
+</p>
+
+<h3>
+
+Knowledge • Justice • Integrity
+
+</h3>
+
+<div class="tagline">
+
+Shaping Future Advocates & Leaders
+
+</div>
+
+</div>
+
+
+<div class="right-side">
+
+<div class="building">
+
+🏛️
+
+</div>
+
+<div class="book">
+
+📚
+
+</div>
+
+<div class="gavel">
+
+🔨
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+<div class="about-content">
+
+<h3>
+Building Leaders in Justice & Law
+</h3>
+
+<p>
+Justice Law College has educated thousands of legal
+professionals over the past four decades. Our mission
+is to cultivate critical thinking, ethical leadership,
+advocacy skills and deep legal knowledge.
+</p>
+
+<p>
+Students benefit from modern moot court facilities,
+research centers, digital libraries, internships,
+industry collaborations and experienced faculty.
+</p>
+
+<ul class="about-highlights">
+<li>✔ NAAC Accredited Institution</li>
+<li>✔ National Moot Court Champions</li>
+<li>✔ International Legal Research Programs</li>
+<li>✔ 95% Placement Assistance</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================
+     STATS SECTION
+====================== -->
+
+<section class="stats">
+
+<div class="section-title">
+
+<h2>Our Achievements</h2>
+
+<p>Numbers that define excellence.</p>
+
+</div>
+
+<div class="stats-grid">
+
+<div class="stat-card">
+
+<h2 class="stat-number" data-target="12000">0</h2>
+
+<p>Students Enrolled</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 class="stat-number" data-target="25">0</h2>
+
+<p>Courses Offered</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 class="stat-number" data-target="41">0</h2>
+
+<p>Years of Excellence</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 class="stat-number" data-target="95">0</h2>
+
+<p>Placement Rate (%)</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================
+     COURSES SECTION
+====================== -->
+
+<section id="courses">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Courses Offered</h2>
+
+<p>
+Choose from our comprehensive legal education
+programs designed to prepare students for
+successful careers in law and governance.
+</p>
+
+</div>
+
+<div class="filter-buttons">
+
+<button class="filter-btn active"
+data-filter="all">
+All
+</button>
+
+<button class="filter-btn"
+data-filter="engineering">
+Legal Studies
+</button>
+
+<button class="filter-btn"
+data-filter="arts">
+Humanities
+</button>
+
+<button class="filter-btn"
+data-filter="commerce">
+Commerce
+</button>
+
+</div>
+
+<div class="course-grid">
+    <div class="course-card"
+data-category="engineering">
+
+<img
+src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=900&q=80"
+alt="BA LLB">
+
+<div class="course-content">
+
+<h3>B.A. LL.B</h3>
+
+<p>
+Integrated law degree combining legal studies,
+political science, sociology and constitutional law.
+</p>
+
+<span>Legal Studies</span>
+
+</div>
+
+</div>
+
+<div class="course-card"
+data-category="engineering">
+
+<img
+src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80"
+alt="BBA LLB">
+
+<div class="course-content">
+
+<h3>B.B.A. LL.B</h3>
+
+<p>
+Blend of business administration and legal education
+for corporate law and management careers.
+</p>
+
+<span>Legal Studies</span>
+
+</div>
+
+</div>
+
+<div class="course-card"
+data-category="engineering">
+
+<img
+src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?auto=format&fit=crop&w=900&q=80"
+alt="LLB">
+
+<div class="course-content">
+
+<h3>LL.B</h3>
+
+<p>
+Professional undergraduate law degree focused on
+advocacy, litigation and judicial services.
+</p>
+
+<span>Legal Studies</span>
+
+</div>
+
+</div>
+<div class="course-card"
+data-category="arts">
+
+<img
+src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
+alt="Political Science">
+
+<div class="course-content">
+
+<h3>B.A Political Science</h3>
+
+<p>
+Study governance, public policy, international
+relations and democratic institutions.
+</p>
+
+<span>Humanities</span>
+
+</div>
+
+</div>
+
+<div class="course-card"
+data-category="commerce">
+
+<img
+src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80"
+alt="B.Com">
+
+<div class="course-content">
+
+<h3>B.Com</h3>
+
+<p>
+Comprehensive commerce education including finance,
+accounting, taxation and business law.
+</p>
+
+<span>Commerce</span>
+
+</div>
+
+</div>
+
+<div class="course-card"
+data-category="commerce">
+
+<img
+src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80"
+alt="M.Com">
+
+<div class="course-content">
+
+<h3>M.Com</h3>
+
+<p>
+Advanced studies in finance, economics, auditing,
+business management and legal compliance.
+</p>
+
+<span>Commerce</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================
+     ADMISSIONS SECTION
+====================== -->
+
+<section
+class="admissions"
+id="admissions">
+
+<div class="container">
+    <div class="section-title">
+
+<h2>Admissions & Fee Structure</h2>
+
+<p>
+Explore available programs, duration, annual fees
+and seat availability. Click table headers to sort.
+</p>
+
+</div>
+
+<div class="table-wrapper">
+
+<input
+type="text"
+id="searchCourse"
+placeholder="Search Courses..."
+style="
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border-radius:10px;
+border:1px solid #ccc;
+">
+
+<table id="courseTable">
+
+<thead>
+
+<tr>
+
+<th onclick="sortTable(0)">
+Course
+</th>
+
+<th onclick="sortTable(1)">
+Duration
+</th>
+
+<th onclick="sortTable(2)">
+Annual Fee
+</th>
+
+<th onclick="sortTable(3)">
+Seats
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>B.A. LL.B</td>
+<td>5</td>
+<td>85000</td>
+<td>120</td>
+</tr>
+
+<tr>
+<td>B.B.A. LL.B</td>
+<td>5</td>
+<td>95000</td>
+<td>100</td>
+</tr>
+
+<tr>
+<td>LL.B</td>
+<td>3</td>
+<td>70000</td>
+<td>180</td>
+</tr>
+
+<tr>
+<td>B.A Political Science</td>
+<td>3</td>
+<td>45000</td>
+<td>150</td>
+</tr>
+
+<tr>
+<td>B.Com</td>
+<td>3</td>
+<td>50000</td>
+<td>180</td>
+</tr>
+<tr>
+<td>M.Com</td>
+<td>2</td>
+<td>60000</td>
+<td>80</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<button
+class="btn btn-primary apply-btn"
+id="openModal">
+
+Apply Now
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ======================
+     APPLICATION MODAL
+====================== -->
+
+<div class="modal"
+id="applicationModal">
+
+<div class="modal-content">
+
+<span
+class="close-modal"
+id="closeModal">
+
+&times;
+
+</span>
+
+<h2>Admission Application</h2>
+
+<br>
+
+<form>
+
+<input
+type="text"
+placeholder="Full Name"
+required>
+
+<br><br>
+
+<input
+type="email"
+placeholder="Email Address"
+required>
+
+<br><br>
+
+<input
+type="text"
+placeholder="Desired Course"
+required>
+
+<br><br>
+
+<input
+type="tel"
+placeholder="Phone Number"
+required>
+
+<br><br>
+
+<button
+class="btn btn-primary"
+type="submit">
+
+Submit Application
+
+</button>
+</form>
+
+</div>
+
+</div>
+
+<!-- ======================
+     FACILITIES SECTION
+====================== -->
+
+<section id="facilities">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Campus Facilities</h2>
+
+<p>
+World-class infrastructure designed to support
+learning, research, wellness and student success.
+</p>
+
+</div>
+
+<div class="facilities-grid">
+
+<div class="facility-card">
+<div class="facility-icon">📚</div>
+<h3>Digital Library</h3>
+<p>
+Access thousands of legal journals,
+e-books and research publications.
+</p>
+</div>
+
+<div class="facility-card">
+<div class="facility-icon">⚖️</div>
+<h3>Moot Court Hall</h3>
+<p>
+Real courtroom simulations for practical
+advocacy and litigation training.
+</p>
+</div>
+
+<div class="facility-card">
+<div class="facility-icon">💻</div>
+<h3>Computer Labs</h3>
+<p>
+Modern computer labs with legal
+research software and databases.
+</p>
+</div>
+
+<div class="facility-card">
+<div class="facility-icon">🏃</div>
+<h3>Sports Complex</h3>
+<p>
+Indoor and outdoor sports facilities
+for physical fitness and recreation.
+</p>
+</div>
+<div class="facility-card">
+<div class="facility-icon">🏠</div>
+<h3>Hostel Facility</h3>
+<p>
+Safe and comfortable accommodation
+for students from different regions.
+</p>
+</div>
+
+<div class="facility-card">
+<div class="facility-icon">📶</div>
+<h3>Campus Wi-Fi</h3>
+<p>
+High-speed internet connectivity
+available throughout the campus.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================
+     GALLERY SECTION
+====================== -->
+<img src="images/college.jpg">
+<section id="sliderSection">
+
+<div class="section-title">
+<h2>Campus Highlights</h2>
+<p>Explore our world-class legal education environment.</p>
+</div>
+
+<div class="slider">
+
+<img class="slide active"
+src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f">
+
+<img class="slide"
+src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85">
+
+<img class="slide"
+src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b">
+
+</div>
+
+</section>
+<section
+class="gallery"
+id="gallery">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Campus Gallery</h2>
+
+<p>
+A glimpse into our vibrant campus,
+academic environment and student life.
+</p>
+
+</div>
+
+<div class="gallery-grid">
+
+<img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80">
+
+<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80">
+
+</div>
+
+</div>
+
+</section>
+<!-- ======================
+     LIGHTBOX
+====================== -->
+
+<div class="lightbox"
+id="lightbox">
+
+<img
+id="lightboxImage"
+src=""
+alt="Preview">
+
+</div>
+
+<!-- ======================
+     CONTACT SECTION
+====================== -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Contact Us</h2>
+
+<p>
+Have questions about admissions,
+courses or campus life? Reach us today.
+</p>
+
+</div>
+
+<div class="contact-grid">
+
+<div class="contact-info">
+
+<h3>Justice Law College</h3>
+
+<div class="contact-item">
+📍 Chennai, Tamil Nadu, India
+</div>
+
+<div class="contact-item">
+📞 +91 98765 43210
+</div>
+
+<div class="contact-item">
+✉ admissions@justicelawcollege.edu
+</div>
+
+<div class="map-box">
+
+<iframe
+width="100%"
+height="100%"
+frameborder="0"
+style="border:0"
+allowfullscreen
+loading="lazy"
+src="https://maps.google.com/maps?q=Chennai&t=&z=13&ie=UTF8&iwloc=&output=embed">
+
+</iframe>
+
+</div>
+
+</div>
+<div>
+
+<form
+class="contact-form"
+id="contactForm">
+
+<input
+type="text"
+id="name"
+placeholder="Your Name">
+
+<input
+type="email"
+id="email"
+placeholder="Your Email">
+
+<input
+type="text"
+id="subject"
+placeholder="Subject">
+
+<textarea
+id="message"
+placeholder="Your Message">
+</textarea>
+
+<div
+class="error"
+id="errorMsg">
+</div>
+
+<button
+type="submit"
+class="btn btn-primary">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================
+     FOOTER
+====================== -->
+
+<footer>
+
+<p>
+
+© 2026
+<span>
+Justice Law College
+</span>
+
+| All Rights Reserved
+
+</p>
+
+</footer>
+
+<!-- ======================
+     JAVASCRIPT
+====================== -->
+
+<script>
+    // ======================
+// MOBILE MENU
+// ======================
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+if(menuBtn && navLinks){
+
+menuBtn.addEventListener("click",()=>{
+
+navLinks.classList.toggle("active");
+
+});
+
+}
+// ======================
+// Animated Counter
+// ======================
+
+const counters = document.querySelectorAll(".stat-number");
+
+const counterObserver = new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+const counter = entry.target;
+
+const target = Number(counter.dataset.target);
+
+let current = 0;
+
+const increment = target/100;
+
+function update(){
+
+current += increment;
+
+if(current < target){
+
+counter.textContent = Math.ceil(current);
+
+requestAnimationFrame(update);
+
+}else{
+
+counter.textContent = target.toLocaleString();
+
+}
+
+}
+
+update();
+
+counterObserver.unobserve(counter);
+
+}
+
+});
+
+},{
+threshold:0.5
+});
+
+counters.forEach(counter=>{
+
+counterObserver.observe(counter);
+
+});
+// ======================
+// COURSE FILTER
+// ======================
+
+const filterButtons =
+document.querySelectorAll(".filter-btn");
+
+const courseCards =
+document.querySelectorAll(".course-card");
+
+filterButtons.forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+filterButtons.forEach(btn=>{
+
+btn.classList.remove("active");
+
+});
+
+button.classList.add("active");
+
+const filter =
+button.dataset.filter;
+
+courseCards.forEach(card=>{
+
+if(
+filter === "all" ||
+card.dataset.category === filter
+){
+
+card.style.display = "block";
+
+setTimeout(()=>{
+
+card.style.opacity = "1";
+card.style.transform =
+"translateY(0px)";
+
+},100);
+
+}else{
+
+card.style.opacity = "0";
+card.style.transform =
+"translateY(20px)";
+
+setTimeout(()=>{
+
+card.style.display = "none";
+
+},300);
+
+}
+
+});
+
+});
+
+});
+// ======================
+// SORT TABLE
+// ======================
+
+function sortTable(column){
+
+const table =
+document.getElementById("courseTable");
+
+const tbody =
+table.querySelector("tbody");
+
+const rows =
+Array.from(tbody.rows);
+
+const isNumeric =
+!isNaN(
+rows[0].cells[column]
+.innerText
+);
+
+rows.sort((a,b)=>{
+
+let valueA =
+a.cells[column]
+.innerText;
+
+let valueB =
+b.cells[column]
+.innerText;
+
+if(isNumeric){
+
+return Number(valueA)
+-
+Number(valueB);
+
+}else{
+
+return valueA.localeCompare(
+valueB
+);
+}
+});
+tbody.innerHTML = "";
+rows.forEach(row=>{
+tbody.appendChild(row);
+});
+
+}
+
+// ======================
+// APPLICATION MODAL
+// ======================
+
+const modal =
+document.getElementById(
+"applicationModal"
+);
+
+const openModal =
+document.getElementById(
+"openModal"
+);
+const closeModal =
+document.getElementById(
+"closeModal"
+);
+
+if(openModal){
+
+openModal.addEventListener("click",()=>{
+
+modal.style.display="flex";
+
+});
+
+}
+
+if(closeModal){
+
+closeModal.addEventListener("click",()=>{
+
+modal.style.display="none";
+
+});
+
+}
+
+window.addEventListener(
+"click",
+(e)=>{
+if(e.target === modal){
+modal.style.display = "none";
+
+}
+}
+);
+
+// ======================
+// GALLERY LIGHTBOX
+// ======================
+
+const galleryImages =
+document.querySelectorAll(
+".gallery-grid img"
+);
+const lightbox =
+document.getElementById(
+"lightbox"
+);
+
+const lightboxImage =
+document.getElementById(
+"lightboxImage"
+);
+
+galleryImages.forEach(image=>{
+
+image.addEventListener(
+"click",
+()=>{
+
+lightbox.classList.add(
+"active"
+);
+
+lightboxImage.src =
+image.src;
+
+}
+);
+
+});
+// Close lightbox on outside click
+
+lightbox.addEventListener(
+"click",
+(e)=>{
+
+if(e.target === lightbox){
+
+lightbox.classList.remove(
+"active"
+);
+
+}
+
+}
+);
+
+// Close lightbox on ESC key
+
+document.addEventListener(
+"keydown",
+(e)=>{
+
+if(e.key === "Escape"){
+
+lightbox.classList.remove(
+"active"
+);
+
+modal.style.display = "none";
+
+}
+}
+);
+
+// ======================
+// CONTACT FORM VALIDATION
+// ======================
+
+const contactForm =
+document.getElementById(
+"contactForm"
+);
+
+const errorMsg =
+document.getElementById(
+"errorMsg"
+);
+
+if(contactForm){
+
+contactForm.addEventListener(
+"submit",
+function(e){
+
+e.preventDefault();
+
+const name =
+document.getElementById("name").value.trim();
+
+const email =
+document.getElementById("email").value.trim();
+
+const subject =
+document.getElementById("subject").value.trim();
+
+const message =
+document.getElementById("message").value.trim();
+
+if(
+name === "" ||
+email === "" ||
+subject === "" ||
+message === ""
+){
+errorMsg.innerText =
+"Please fill all fields.";
+return;
+}
+errorMsg.innerText = "";
+alert(
+"Message Sent Successfully!"
+);
+contactForm.reset();
+
+});
+
+}
+const slides =
+document.querySelectorAll(".slide");
+
+let currentSlide = 0;
+
+if(slides.length>0){
+
+setInterval(()=>{
+
+slides[currentSlide]
+.classList.remove("active");
+
+currentSlide++;
+
+if(currentSlide >= slides.length){
+currentSlide = 0;
+}
+
+slides[currentSlide]
+.classList.add("active");
+
+},3000);
+
+}
+
+const searchCourse = document.getElementById("searchCourse");
+
+if (searchCourse) {
+
+    searchCourse.addEventListener("keyup", function () {
+
+        let value = this.value.toLowerCase();
+
+        let rows = document.querySelectorAll("#courseTable tbody tr");
+
+        rows.forEach(row => {
+
+            row.style.display = row.innerText
+                .toLowerCase()
+                .includes(value)
+                ? ""
+                : "none";
+
+        });
+
+    });
+}
+
+const reveals =
+document.querySelectorAll("section");
+
+const revealObserver =
+new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target
+.classList.add("active");
+
+}
+
+});
+
+});
+
+reveals.forEach(item=>{
+
+item.classList.add("reveal");
+
+revealObserver.observe(item);
+
+});
+
+
+</script>
+
+</body>
+</html>
